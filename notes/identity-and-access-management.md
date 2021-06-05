@@ -59,7 +59,8 @@ Statements consists of
   * Condition: conditions for when this policy is in effect (optional)
   
 <details>
-  <summary>* Example JSON</summary>
+  <summary>Example JSON</summary>
+  
 ```json
 {
   "Version":"2012-10-17",
