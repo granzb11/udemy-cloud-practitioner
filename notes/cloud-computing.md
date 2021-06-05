@@ -74,3 +74,12 @@ If you need to launch a new application, where should you do it?
 * __Proximity__ to customers: reduced latency
 * __Available services__ within a Region: new services and new features aren't available in every Region
 * __Pricing__ varies region to region and is transparent in the service pricing page
+
+<b><br>
+## AWS Availability Zones
+* Each region has many availability zones (usually 3, min is 2, max is 6). Example:
+  * ap-southeast-2a
+  * ap-southeast-2b
+  * ap-southeast-2c  
+* Each availability zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity.
+* They're separate from each other, so that they're isolated from disasters.
