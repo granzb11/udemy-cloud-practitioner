@@ -12,7 +12,7 @@
 * These policies define the __permissions__ of the users
 * In AWS you apply the __least privilege principle__: don't give more permissions than a user needs
 <details>
-  <summary>* Example JSON Policy:</summary>
+  <summary>Example JSON Policy:</summary>
 
 ```json
 {
@@ -60,6 +60,7 @@ Statements consists of
   
 <details>
   <summary>* Example JSON</summary>
+```json
 {
   "Version":"2012-10-17",
   "Id":"S3-Account-Permissions",
@@ -82,4 +83,5 @@ Statements consists of
     }
   ]
 }
+```
 </details>  
