@@ -83,3 +83,17 @@ If you need to launch a new application, where should you do it?
     * ap-southeast-2c  
   * Each availability zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity.
   * They're separate from each other, so that they're isolated from disasters.
+  
+<br><br>
+## Tour of AWS Console
+* AWS has Global Services:
+  * Identity and Access Management (IAM)
+  * Route 53 (DNS service)
+  * CloudFront (Content Delivery Network)
+  * WAF (Web Application Firewall)
+* __Most AWS services are Region-scoped:__
+  * Amazon EC2  (IaaS)
+  * Elastic Beanstalk (PaaS)
+  * Lambda (Function as a Service)
+  * Rekognition (SaaS)
+  
