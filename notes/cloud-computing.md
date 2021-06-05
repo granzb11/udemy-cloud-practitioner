@@ -50,3 +50,14 @@ Examples:
 | Servers         | :white_check_mark: | :x: | :x: | :x: |
 | Storage         | :white_check_mark: | :x: | :x: | :x: |
 | Networking      | :white_check_mark: | :x: | :x: | :x: |
+
+
+## Pricing of the Cloud 
+* AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model.
+* Computer:
+  * Pay for compute time
+* Storage:
+  * Pay for data stored in the cloud
+* Data transfer OUT of the Cloud:
+  * Data transfer IN is free
+* Solves the expensive issue of traditional IT
