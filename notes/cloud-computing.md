@@ -39,13 +39,3 @@ I believe an example of SaaS is Slack.
 | Servers         | :white_check_mark: | :x: | :x: | :x: |
 | Storage         | :white_check_mark: | :x: | :x: | :x: |
 | Networking      | :white_check_mark: | :x: | :x: | :x: |
-
-
-  * Applications
-  * Data
-  * Runtime
-  * Middleware
-  * OS
-  * Virtualization
-  * Servers
-  * Storage 
