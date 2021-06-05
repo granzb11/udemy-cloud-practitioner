@@ -1,3 +1,5 @@
+# What is Cloud Computing?
+
 ## Types of Cloud Computing
 
 ### Infrastructure as a Service (IaaS)
@@ -103,4 +105,6 @@ If you need to launch a new application, where should you do it?
 * Customer - Responsibility for the security _IN_ the cloud
 * AWS - Responsibility for the security _OF_ the cloud
 
-![MarineGEO circle logo](https://d1.awsstatic.com/security-center/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg "MarineGEO logo") 
+![AWS Shared Responsibility Diagram](https://d1.awsstatic.com/security-center/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg "Shared Responsibility Diagram")
+
+ 
