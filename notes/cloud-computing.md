@@ -74,6 +74,7 @@ If you need to launch a new application, where should you do it?
 * `Proximity` to customers: reduced latency
 * `Available services` within a Region: new services and new features aren't available in every Region
 * `Pricing` varies region to region and is transparent in the service pricing page
+
 <br><br>
 
 ## AWS Availability Zones
@@ -97,3 +98,9 @@ If you need to launch a new application, where should you do it?
   * Lambda (Function as a Service)
   * Rekognition (SaaS)
   
+<br><br>
+## Shared Responsibility Model
+* Customer - Responsibility for the security _IN_ the cloud
+* AWS - Responsibility for the security _OF_ the cloud
+
+![MarineGEO circle logo](https://d1.awsstatic.com/security-center/Shared_Responsibility_Model_V2.59d1eccec334b366627e9295b304202faf7b899b.jpg "MarineGEO logo") 
