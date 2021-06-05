@@ -70,14 +70,13 @@ Examples:
 <br><br>
 ## How to choose an AWS Region?
 If you need to launch a new application, where should you do it?
-* __Compliance__ with data governance and legal requirements: data never leaves a region without your explicit permission
-* __Proximity__ to customers: reduced latency
-* __Available services__ within a Region: new services and new features aren't available in every Region
-* __Pricing__ varies region to region and is transparent in the service pricing page
+* `Compliance` with data governance and legal requirements: data never leaves a region without your explicit permission
+* `Proximity` to customers: reduced latency
+* `Available services` within a Region: new services and new features aren't available in every Region
+* `Pricing` varies region to region and is transparent in the service pricing page
 
 <b><br>
 ## AWS Availability Zones
-
   * Each region has many availability zones (usually 3, min is 2, max is 6). Example:
     * ap-southeast-2a
     * ap-southeast-2b
