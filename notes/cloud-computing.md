@@ -18,4 +18,34 @@ An example of this would be the internal Control-M or DBT by Fishtown tools we h
   * Completed product that is run and managed by the service provider.
   
 I don't believe at USAA we have many SaaS applications, we try to bring in as much of these tools as we can internally. 
-I believe an example of SaaS is gitlab/github. 
+I believe an example of SaaS is Slack.
+
+
+## Comparing On-prem vs Cloud offerings
+
+### Components
+
+:white_check_mark: - Managed by you
+:x: - Managed by others
+
+| Components      | On-prem  | IaaS   | PaaS    | SaaS    |
+| --------------- | -------- | ------ | ------- | ------- | 
+| Applications    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: |
+| Data            | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: |
+| Runtime         | :white_check_mark: | :white_check_mark: | :x: | :x: |
+| Middleware      | :white_check_mark: | :white_check_mark: | :x: | :x: |
+| O/S             | :white_check_mark: | :white_check_mark: | :x: | :x: |
+| Virtualization  | :white_check_mark: | :x: | :x: | :x: |
+| Servers         | :white_check_mark: | :x: | :x: | :x: |
+| Storage         | :white_check_mark: | :x: | :x: | :x: |
+| Networking      | :white_check_mark: | :x: | :x: | :x: |
+
+
+  * Applications
+  * Data
+  * Runtime
+  * Middleware
+  * OS
+  * Virtualization
+  * Servers
+  * Storage 
