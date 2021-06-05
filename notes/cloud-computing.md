@@ -77,6 +77,9 @@ If you need to launch a new application, where should you do it?
 
 <b><br>
 ## AWS Availability Zones
+test
+
+
   * Each region has many availability zones (usually 3, min is 2, max is 6). Example:
     * ap-southeast-2a
     * ap-southeast-2b
