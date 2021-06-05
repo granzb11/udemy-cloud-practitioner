@@ -76,7 +76,7 @@ If you need to launch a new application, where should you do it?
 * `Pricing` varies region to region and is transparent in the service pricing page
 
 <b><br>
-## AWS Availability Zones
+
 test
 
 
