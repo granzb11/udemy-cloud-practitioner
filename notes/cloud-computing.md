@@ -51,7 +51,7 @@ Examples:
 | Storage         | :white_check_mark: | :x: | :x: | :x: |
 | Networking      | :white_check_mark: | :x: | :x: | :x: |
 
-
+<br><br>
 ## Pricing of the Cloud 
 * AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model.
 * Computer:
