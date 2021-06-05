@@ -23,7 +23,7 @@ I believe an example of SaaS is Slack.
 
 ## Comparing On-prem vs Cloud offerings
 
-### Components
+### Who manages what components
 
 :white_check_mark: - Managed by you<br/>
 :x: - Managed by others
