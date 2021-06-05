@@ -9,6 +9,8 @@
 
 ## IAM: Permissions
 * Users or Groups can be assigned JSON documents called Policies
+* These policies define the __permissions__ of the users
+* In AWSyou apply the __least privilege principle__: don't give more permissions than a user needs
 * Example JSON Policy:
 ```json
 {
