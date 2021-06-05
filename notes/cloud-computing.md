@@ -25,7 +25,7 @@ I believe an example of SaaS is Slack.
 
 ### Components
 
-:white_check_mark: - Managed by you
+:white_check_mark: - Managed by you<br/>
 :x: - Managed by others
 
 | Components      | On-prem  | IaaS   | PaaS    | SaaS    |
