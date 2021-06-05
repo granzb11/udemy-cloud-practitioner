@@ -66,3 +66,11 @@ Examples:
 * Data transfer OUT of the Cloud:
   * Data transfer IN is free
 * Solves the expensive issue of traditional IT
+
+<br><br>
+## How to choose an AWS Region?
+If you need to launch a new application, where should you do it?
+* Compliance with data governance and legal requirements: data never leaves a region without your explicit permission
+* Proximity to customers: reduced latency
+* Available services within a Region: new services and new features aren't available in every Region
+* Pricing varies region to region and is transparent in the service pricing page
