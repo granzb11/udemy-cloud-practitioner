@@ -1,4 +1,4 @@
-### Types of Cloud Computing
+## Types of Cloud Computing
 
 ### Infrastructure as a Service (IaaS)
   * Provide building blocks for cloud IT
