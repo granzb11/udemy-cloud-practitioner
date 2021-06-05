@@ -14,7 +14,7 @@ Examples:
 
 <br>
 
-#### Platform as a Service (PaaS)
+### Platform as a Service (PaaS)
   * Removes the need for your organization to manage the underlying infrastructure
   * Focus on the deployment and management of your applications
   
