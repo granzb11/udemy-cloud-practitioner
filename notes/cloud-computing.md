@@ -75,7 +75,6 @@ If you need to launch a new application, where should you do it?
 * `Available services` within a Region: new services and new features aren't available in every Region
 * `Pricing` varies region to region and is transparent in the service pricing page
 
-<b><br>
 
 test
 
