@@ -5,3 +5,5 @@ Udemy course link here: https://www.udemy.com/course/aws-certified-cloud-practit
 
 ## The Project Structure
   - code / folder that contains course documents downloaded [here](https://media.datacumulus.com/aws-ccp/code.zip).
+  
+  
