@@ -76,9 +76,7 @@ If you need to launch a new application, where should you do it?
 * `Pricing` varies region to region and is transparent in the service pricing page
 
 
-test
-
-
+## AWS Availability Zones
   * Each region has many availability zones (usually 3, min is 2, max is 6). Example:
     * ap-southeast-2a
     * ap-southeast-2b
