@@ -72,6 +72,8 @@
     - Data warehousing applications
     - Distributed file systems
 
+<br><br>
+
 # Introduction to Security Groups
   - Security Groups are the fundamental of netowrk security in AWS
   - They control how traffic is allowed into or out of our EC2 instances
