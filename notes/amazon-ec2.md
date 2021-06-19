@@ -106,3 +106,9 @@
   - 80 = HTTP - access unsecured websites
   - 443 = HTTPS - access secured websites
   - 3389 = RDP (remote desktop protocol) - log into a Windows instance
+
+EC2 instances can have many security groups
+Security Groups can belong to many EC2 instances
+
+## SSH Summary Table
+![image info](/Users/gustavoranz/PycharmProjects/udemy-cloud-practitioner/images/ssh-terminal-diagram.png)
