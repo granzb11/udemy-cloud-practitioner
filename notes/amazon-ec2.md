@@ -111,4 +111,4 @@ EC2 instances can have many security groups
 Security Groups can belong to many EC2 instances
 
 ## SSH Summary Table
-![image info](/Users/gustavoranz/PycharmProjects/udemy-cloud-practitioner/images/ssh-terminal-diagram.png)
+![SSH Summary Table](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ssh-terminal-diagram.png)
