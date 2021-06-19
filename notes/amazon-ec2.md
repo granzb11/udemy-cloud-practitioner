@@ -112,3 +112,26 @@ Security Groups can belong to many EC2 instances
 
 ## SSH Summary Table
 ![SSH Summary Table](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ssh-terminal-diagram.png)
+
+# How to SSH into your EC2 instance - Linux/Mac OSX
+  - SSH is one of the most improtant function. It allows you to control a remote machine, all using the command line
+  - We attempted to ssh into our machine just normal but got denied, console output below:
+
+  ```console
+    (base) ~$ ssh ec2-user@52.87.212.147
+    ec2-user@52.87.212.147: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+  ```
+  
+  - To ssh from terminal on macbook, needed to make sure we had the `.pem` file downloaded and that it had permissions `0400`. We attempted to login with the key pair file when it had permissions `0644` but we got the following error:
+  
+  ```console
+    (base) ~/PycharmProjects/udemy-cloud-practitioner$ ssh -i configs/EC2Tutorial.pem ec2-user@52.87.212.147
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    Permissions 0644 for 'configs/EC2Tutorial.pem' are too open.
+    It is required that your private key files are NOT accessible by others.
+    This private key will be ignored.
+    Load key "configs/EC2Tutorial.pem": bad permissions
+    ec2-user@52.87.212.147: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+  ```
