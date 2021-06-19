@@ -115,6 +115,7 @@ Security Groups can belong to many EC2 instances
 
 # How to SSH into your EC2 instance - Linux/Mac OSX
   - SSH is one of the most improtant function. It allows you to control a remote machine, all using the command line
+  - we used `ec2-user` as the user when logging in via ssh
   - We attempted to ssh into our machine just normal but got denied, console output below:
 
   ```console
@@ -135,3 +136,22 @@ Security Groups can belong to many EC2 instances
     Load key "configs/EC2Tutorial.pem": bad permissions
     ec2-user@52.87.212.147: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
   ```
+
+  - After updating the permissions on the `.pem` file to 0400, we were able to log in.
+
+  ```console
+  (base) ~/PycharmProjects/udemy-cloud-practitioner$ ls -al configs/
+total 8
+drwxr-xr-x   3 gustavoranz  staff    96 Jun 19 12:39 .
+drwxr-xr-x  10 gustavoranz  staff   320 Jun 19 12:38 ..
+-r--------   1 gustavoranz  staff  1704 Jun 19 12:39 EC2Tutorial.pem
+(base) ~/PycharmProjects/udemy-cloud-practitioner$ ssh -i configs/EC2Tutorial.pem ec2-user@52.87.212.147
+Last login: Sat Jun 19 16:42:14 2021 from c-73-212-233-102.hsd1.va.comcast.net
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-62-137 ~]$
+```
