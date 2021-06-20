@@ -38,7 +38,7 @@
     5: generation (AWS improves them over time) <br>
     2xlarge: size within the instance class <br>
 
-## EC2 Instance Types - General Purpose
+### EC2 Instance Types - General Purpose
   - Great for diversity of workloads such as web servers or code repositories
   - Balance between:
     - Compute
@@ -55,7 +55,7 @@
     - Scientific modeling and machine learning
     - Dedicated gaming servers
 
-## EC2 Instance Types - Memory Optpmized
+### EC2 Instance Types - Memory Optpmized
   - Fast performance for workloads that process large data sets in memory
   - Use cases:
     - High performance, relation/non-relational databases
@@ -63,7 +63,7 @@
     - In-memory databases optomized for BI (business inteliggence)
     - Application performing real-time processing of big unstructured data
 
-## EC2 Instance Types - Storage Optimized
+### EC2 Instance Types - Storage Optimized
   - Great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage
   - Use cases:
     - High frequency online transaction processing (OLTP) systems
