@@ -231,3 +231,25 @@ https://aws.amazon.com/amazon-linux-2/
 ## Price Comparison
 Example - m4.arge - us-east-1
 ![SSH Pricing Comparison Table](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/pricing-comparison-diagram.png)
+
+## Shared Responsibility Model  for EC2
+  - AWS
+    - Infrastructure (global network security)
+    - Isolation on physical hosts
+    - Replacing faulty hardware
+    - Compliance validation
+
+  - User
+    - Security Groups rules
+    - Operating-system patches and updates
+    - Software and utilities installed on the EC2 instance
+    - IAM Roles assigned to EC2 and IAM user access management
+    - Data security on your instance
+
+## EC2 Section - Summary
+  -  EC2 Instance: AMI (OS) + Instance Size (CPU + RAM) + Storage + security groups + EC2 User Data (bootstrap script)
+  - Security Groups: Firewall attached to the EC2 instance - you can define rules to allow for which ports and IPs can access EC2 instance
+  - EC2 User Data: Script launched at the first start of an instance
+  - SSH: start a terminal into our EC2 instance (port 22)
+  - EC2 Instance Role: link to IAM roles
+  - Purchasing Options: On-Demand, Spot, Reserved (Standard + Convertible + Scheduled), Dedicated Host, Dedicated Instance
