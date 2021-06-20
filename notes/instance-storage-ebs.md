@@ -29,4 +29,15 @@
 
 ## EBS - Delete on Termination Attribute
 ![EBS Delete on Termination](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ebs-delete-on-termination.png)
-  - Controls teh EBS behavior when an EC2 instance terminates
+  - Controls the EBS behavior when an EC2 instance terminates
+    - By default the root EBS volume is deleted (attribute enabled)
+    - By default, any other  attached EBS volume is __not__ deleted (attribute disabled)
+  - This can be controlled by the AWS console/AWS CLI
+  - __Use case: preserve root volume when instance is terminated__
+
+## EBS Snapshots
+  - Make a backup (snapshot) of your EBS volume at a point in time
+  - Not necessary to detach volume to do snapshot, but recommended
+  - Can copy snaoshots across AZ or Region
+  
+![EBS Snapshot](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ebs-snapshot.png)
