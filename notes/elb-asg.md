@@ -44,7 +44,7 @@
 
 ## Scalablity vs Elasticity (vs Agility)
   - Scalability: ability to accommodate a larger load by making the hardware stronger (scale up), or by adding nodes (scale out)
-  - Elasticity: Once a system is scalable, elasticity means that there will be some "auto-scaling" so that the system can scale based on the load. This is "cloud-friends": pay-per-use, match demand, optimize costs
+  - Elasticity: Once a system is scalable, elasticity means that there will be some "auto-scaling" so that the system can scale based on the load. This is "cloud-friendly": pay-per-use, match demand, optimize costs
   - Agility: (not related to scalability - distractor) new IT resources are only a click away, which means that you reduce the time to make those resources available to your developers from weeks to just minutes.
 
 ## What is load balancing?
@@ -88,3 +88,30 @@
 
 ## Auto Scaling Group in AWS With Load Balancer
 ![Auto Scaling Group With Load Balancer](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/auto-scaling-group-with-load-balancer.png)
+
+## Auto Scaling Groups -- Scaling Strategies
+  - Manual Scaling: Update the size of an ASG manually
+  - Dynamic Scaling: Respond to changing demand
+    - Simple/Step Scaling:
+      - When a CloudWatch alarm is triggered (example CPU > 70%), then add 2 units
+      - When a CloudWatch alarm is triggered (example CPU < 20%), then remove 1 unit
+    - Target Tracking Scaling
+      - Example: I want the average ASG CPU to stay around 40%
+    - Scheduled Scaling
+      - Anticipate a scaling based on known usage patterns
+      - Example: increase the min. capcity to 10 at 5pm on Friday
+    - Predictive Scaling
+      - Uses machine learning to predict future traffic ahead of time
+      - Automatically provisions  the right number of EC2 instances in advance
+      - Useful when your load has predictable time-based patterns
+
+## ELB & ASG - Summary
+  -  High Availability vs Scalability (vertical and horizontal) vs Elasticity vs Agility in the Cloud
+  - Elastic Load Balancers (ELB)
+    - Distribute traffic across backend EC2 instances, can be multi-AZ
+    - Supports health checks
+    - 3 types: Application LB (HTTP - L7), Network LB (TCP - L4), Classic LB (old)
+  - Auto Scaling Groups (ASG)
+    - Implement Elasticity for your application, across multiple AZ
+    - Scale EC2 instances based on the demand on your system, replace unhelathy
+    - Integrated with the ELB
