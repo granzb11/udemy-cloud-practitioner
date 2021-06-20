@@ -209,3 +209,16 @@ https://aws.amazon.com/amazon-linux-2/
 
 ## EC2 Dedicated Hosts
   - An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Dedicated Hosts can help you address __compliance requirements__ and reduce costs by allowing you to __use your existing server-bound software licenses__
+  - Allocated for your account for a 3-year period reservation
+  - More expensive
+
+  <br>
+
+  - Useful for software that have complicated licensing model (BYOL - Bring Your Own License)
+  - Or for companies taht have strong regulatory or compliance needs
+
+## EC2 Dedicated Instances
+  - Instances running on hardware that's dedicated to you
+  - May share hardware with other instances in same account
+  - No control over isntance placement (can move hardware after Stop/Start)
+
