@@ -60,3 +60,31 @@
   - Launch instances from other AMIs
 
 ![Custom AMI](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/custom-ami.png)
+
+
+## EC2 Image Builder
+  - Used to automate the creation of Virtual Machines or container images
+  - => Automate the creation, maintain, validate and test EC2 AMIs
+  - Can be run on a schedule (weekly, whenever packages are updated, etc...)
+  - Free service (only pay for the underlying resources)
+![EC2 Image Builder](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ec2-image-builder.png)
+
+
+## EC2 Instance Store
+  - EBS volumes are __network drives__ with good but "limited" performance
+  - __if you need a high-performance hardware disk, use EC2 Instance Store__
+  <br>
+  - Better I/O performance
+  - EC2 Instance Store lose their storage if they're stopped (ephemeral)
+  - Not good for as a durable long-term place to store data
+  - Good buffer/cache/scratch data/temporary content
+  - Risk of data loss if hardware fails
+  - Backups and Replication are __your responsibility__
+
+## EFS - Elastic File System
+  -  Managed NFS (network file system) that __can be mounted on 100s of EC2__
+  - EFS works with __Limux EC2__ instances in __multi-AZ__
+  - Highly available, scalable, expensive (3x gp2), pay per use, no capacity planning
+
+## EBS vs EFS
+![EBS vs EFS](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ebs-vs-efs.png)
