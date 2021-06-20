@@ -204,5 +204,8 @@ https://aws.amazon.com/amazon-linux-2/
     - workloads with a flexible start and end time
   
     <br>
-    
+
   - __Not suitable for critical jobs or databases__
+
+## EC2 Dedicated Hosts
+  - An Amazon EC2 Dedicated Host is a physical server with EC2 instance capacity fully dedicated to your use. Dedicated Hosts can help you address __compliance requirements__ and reduce costs by allowing you to __use your existing server-bound software licenses__
