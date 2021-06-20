@@ -181,9 +181,12 @@ https://aws.amazon.com/amazon-linux-2/
   - Recommended for steady-state usage applications (think database)
 
   ### Convertible Reserved Instance
+
     - can change the EC2 instance type
     - up to 54% discount
+
   ### Scheduled Reserved Instances
+  
     - launch within time window you reserve
     - when you require a fraction of day/week/month
     - still commitment over 1 to 3 years
