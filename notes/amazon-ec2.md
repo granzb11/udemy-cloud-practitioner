@@ -181,12 +181,24 @@ https://aws.amazon.com/amazon-linux-2/
   - Recommended for steady-state usage applications (think database)
 
   ### Convertible Reserved Instance
-
     - can change the EC2 instance type
     - up to 54% discount
 
   ### Scheduled Reserved Instances
-  
     - launch within time window you reserve
     - when you require a fraction of day/week/month
     - still commitment over 1 to 3 years
+
+##  EC2 Spot Instances
+  - can get a discount of up to 90% compared to On-demand
+  - Instances that you can "lose" at any point of time if your max price is less tahn the current spot price
+  - The MOST cost-efficient isntances in AWS
+  <br>
+  - Useful for workloads that are resilient to failure
+    - batch jobs
+    - data analysis
+    - image processing
+    - any distributed workloads
+    - workloads with a flexible start and end time
+    <br>
+  - __Not suitable for critical jobs or databases__
