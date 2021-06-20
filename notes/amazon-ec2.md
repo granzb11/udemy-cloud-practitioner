@@ -222,3 +222,8 @@ https://aws.amazon.com/amazon-linux-2/
   - May share hardware with other instances in same account
   - No control over isntance placement (can move hardware after Stop/Start)
 
+### Which purchasing option is right for me?
+- On demand: coming and staying in resort whenever we like, we pay the full price
+- Reserved: like planning ahead and if we plan to stay for a long time, we may get a good discount
+- Spot instances: the hotel allows people to bid for  the empty rooms and the  highest bidder keeps the rooms. You can get kicked out at any time
+- Dedicated hosts: We book an entire building of the resort
