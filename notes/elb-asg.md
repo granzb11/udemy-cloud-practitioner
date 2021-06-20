@@ -89,7 +89,7 @@
 ## Auto Scaling Group in AWS With Load Balancer
 ![Auto Scaling Group With Load Balancer](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/auto-scaling-group-with-load-balancer.png)
 
-## Auto Scaling Groups -- Scaling Strategies
+## Auto Scaling Groups - Scaling Strategies
   - Manual Scaling: Update the size of an ASG manually
   - Dynamic Scaling: Respond to changing demand
     - Simple/Step Scaling:
