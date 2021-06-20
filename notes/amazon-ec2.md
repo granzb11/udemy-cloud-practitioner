@@ -1,7 +1,7 @@
 #  Amazon EC2
   - One of the most popular of AWS' offering
   - Elastic Compute Cloud - Infrastructure as a Service
-  - It main consists in the capability of:
+  - It mainly consists in the capability of:
     - Renting virtual mahcines (EC2)
     - Storing data on virtual drives (EBS)
     - Distributing load across machines (ELB)
@@ -33,10 +33,10 @@
 
 ## EC2 instance types - Overview
   - You can use different types of EC2 instance that are optimised for different use cases - (https://aws.amazon.com/ec2/instance-types/)
-  - AWS has the following naming convention: m5.2xlarge
-    m: instance class
-    5: generation (AWS improves them over time)
-    2xlarge: size within the instance class
+  - AWS has the following naming convention: m5.2xlarge <br>
+    m: instance class <br>
+    5: generation (AWS improves them over time) <br>
+    2xlarge: size within the instance class <br>
 
 ## EC2 Instance Types - General Purpose
   - Great for diversity of workloads such as web servers or code repositories
