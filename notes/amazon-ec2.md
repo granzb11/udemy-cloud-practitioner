@@ -55,7 +55,7 @@
     - Scientific modeling and machine learning
     - Dedicated gaming servers
 
-### EC2 Instance Types - Memory Optpmized
+### EC2 Instance Types - Memory Optomized
   - Fast performance for workloads that process large data sets in memory
   - Use cases:
     - High performance, relation/non-relational databases
@@ -157,7 +157,7 @@ https://aws.amazon.com/amazon-linux-2/
 ```
 
 # EC2 Instances Purchasing Options
-  - On-Demand Instnces: short workload, predictable pricing
+  - On-Demand Instances: short workload, predictable pricing
   - Reserved: (MINIMUM 1 year)
     - Reserved Instances: long workloads
     - Convertible Reserved Instances: long workloads with flexible instances
@@ -174,7 +174,7 @@ https://aws.amazon.com/amazon-linux-2/
   - Recommended for `short-term` and  `un-interrupted workloads`, where you can't predict how the application will behave.
 
 ## EC2 Reserved Instances
-  - Up to 75% discount compared to On-deman
+  - Up to 75% discount compared to On-demand
   - Reservation period: 1 year = + discount | 3 years = +++ discount
   - Purchasing options: no upfront | partial upfront = + discount | All upfront = ++ discount
   - Reserve a specific instance type
@@ -191,8 +191,8 @@ https://aws.amazon.com/amazon-linux-2/
 
 ##  EC2 Spot Instances
   - can get a discount of up to 90% compared to On-demand
-  - Instances that you can "lose" at any point of time if your max price is less tahn the current spot price
-  - The MOST cost-efficient isntances in AWS
+  - Instances that you can "lose" at any point of time if your max price is less than the current spot price
+  - The MOST cost-efficient instances in AWS
 
   <br>
 
@@ -215,15 +215,19 @@ https://aws.amazon.com/amazon-linux-2/
   <br>
 
   - Useful for software that have complicated licensing model (BYOL - Bring Your Own License)
-  - Or for companies taht have strong regulatory or compliance needs
+  - Or for companies that have strong regulatory or compliance needs
 
 ## EC2 Dedicated Instances
   - Instances running on hardware that's dedicated to you
   - May share hardware with other instances in same account
-  - No control over isntance placement (can move hardware after Stop/Start)
+  - No control over instance placement (can move hardware after Stop/Start)
 
-### Which purchasing option is right for me?
+## Which purchasing option is right for me?
 - On demand: coming and staying in resort whenever we like, we pay the full price
 - Reserved: like planning ahead and if we plan to stay for a long time, we may get a good discount
 - Spot instances: the hotel allows people to bid for  the empty rooms and the  highest bidder keeps the rooms. You can get kicked out at any time
 - Dedicated hosts: We book an entire building of the resort
+
+## Price Comparison
+Example - m4.arge - us-east-1
+![SSH Pricing Comparison Table](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/pricing-comparison-diagram.png)
