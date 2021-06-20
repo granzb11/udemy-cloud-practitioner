@@ -88,3 +88,59 @@
 
 ## EBS vs EFS
 ![EBS vs EFS](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ebs-vs-efs.png)
+  - EBS can only be attached to ONE instance in ONE AZ
+  - EBS volumes are bound to ONE availability zone
+  - If we wanted to move the EBS volume over to another AZ, we would create an EBS Snapshot and then restore that snapshot into the new availability zone
+    - This is a __copy__ NOT an __in-sync__ replica
+  
+  <br>
+  
+  - EFS is a network file system which means that whatever is on the EFS drive is _shared_ by everything that is mounted to it.
+  - Say we have many instances on AZ1 and many instances on AZ2, at the same time all the instances can mount the EFS mount and they will ALL see the same files. That's what makes it a "shared file system"
+
+## EFS Infrequent Access (EFS-IA)
+  - __Storage class__ that  is cost-optomized for files not accessed every day
+  - Up to 92% lower cost compared to EFS Standard
+  - EFS will automatically move your files to EFS-IA based on the last time they were accessed
+  - Enable EFS-IA with a Lifecycle Policy
+  - Example: move files that are not accessed for 60 days to EFS-IA
+  - Transparent to the applications accessing EFS
+
+## Shared Responsibility Model of EC2 Storage
+  - AWS
+    - Infrastructure
+    - Replication for data for EBS volumes and EFS drives
+    - Replacing faulty hardware
+    - Ensuring their employees cannot access your data
+  
+  - User
+    - Setting up backup/snapshot procedures
+    - Setting up data encryption
+    - Responsibility of any data on the drives
+    - Understanding the risk of using EC2 Instance Store
+
+## Amazon FSx for Windows File Server
+  - A fully managed, highly reliable, and scalable __Windows Native__ shared file system
+  - Built on __Windows File Server__
+  - Supports __SMB protocol__ and Windows NTFS
+  - Integrated with Microsoft Active Directory
+  - Can be accessed from AWS or your on-premise infrastructure
+
+## Amazon FSx for Lustre
+  -  A fully managed, high-performance, scalable file storage for __High Performance Computing (HPC)__
+  - The name Lustre is derived from "Linux" and "Cluster"
+  - Machine learning, Analytics, Video Processing, Financial Modeling...
+  - Scales up to 100s GB/s, millions of IOPS, sub-ms latencies
+
+## EC2 Instance Storage - Sumarry
+  - EBS Volumes:
+    - network drives attached to one  EC2 instance at a time
+    - Mapped to an Availability Zones
+    - Can use EBS Snapshots for backups/transferring EBS volumes across AZ
+  - AMI: create ready-to-use EC2 instances with our customizations
+  - EC2 Image Builder: Automatically, build, test and distribute AMIs
+  - EC2 Instance Store: 
+    - High performance hardware disk attached to our EC2 instance
+    - Lost if our instance is stopped/terminated
+  - EFS: network file system, can be attached to 100s of instances in a region
+  - EFS-IA: cost-optomized storage class for infrequent accessed files
