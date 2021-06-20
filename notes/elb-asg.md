@@ -84,5 +84,7 @@
 ## Auto Scaling Group in AWS
 ![Auto Scaling Group](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/auto-scaling-group.png)
 
+<br><br>
+
 ## Auto Scaling Group in AWS With Load Balancer
 ![Auto Scaling Group With Load Balancer](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/auto-scaling-group-with-load-balancer.png)
