@@ -41,3 +41,22 @@
   - Can copy snaoshots across AZ or Region
   
 ![EBS Snapshot](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/ebs-snapshot.png)
+
+## AMI Overview
+  - AMI = Amazon Machine Image
+  - AMI are __customization__ of an EC2 instance
+    - You add your own software, configurations, operating system, monitoring...
+    - Faster boot/ configuration time because all your software is pre-packaged
+  - AMI are built of a __specific region__ (and can be copied across regions)
+  - You can launch EC2 instances from:
+    - A Public AMI: AWS provided
+    - Your own AMI: You make and maintain them yourself
+    - An AWS Marketplace AMI: an AMI someone else made (and potentially sells)
+  
+## AMI Process (from an EC2 instance)
+  - Start an EC2 instance and customize it
+  - Stop the instance (for data integrity)
+  - Build an AMI - this will also create EBS snapshots
+  - Launch instances from other AMIs
+
+![Custom AMI](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/custom-ami.png)
