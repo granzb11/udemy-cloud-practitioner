@@ -193,12 +193,16 @@ https://aws.amazon.com/amazon-linux-2/
   - can get a discount of up to 90% compared to On-demand
   - Instances that you can "lose" at any point of time if your max price is less tahn the current spot price
   - The MOST cost-efficient isntances in AWS
+
   <br>
+
   - Useful for workloads that are resilient to failure
     - batch jobs
     - data analysis
     - image processing
     - any distributed workloads
     - workloads with a flexible start and end time
+  
     <br>
+    
   - __Not suitable for critical jobs or databases__
