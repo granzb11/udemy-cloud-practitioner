@@ -155,3 +155,35 @@ Last login: Sat Jun 19 16:42:14 2021 from c-73-212-233-102.hsd1.va.comcast.net
 https://aws.amazon.com/amazon-linux-2/
 [ec2-user@ip-172-31-62-137 ~]$
 ```
+
+# EC2 Instances Purchasing Options
+  - On-Demand Instnces: short workload, predictable pricing
+  - Reserved: (MINIMUM 1 year)
+    - Reserved Instances: long workloads
+    - Convertible Reserved Instances: long workloads with flexible instances
+    - Scheduled Reserve Instances: example - every Thursday between 3 and 6 pm
+  - Spot instances: short workloads, cheap, can lose instances (less reliable)
+  - Dedicated Hosts: book an entire physical server, control instance placement
+
+## EC2 On Demand
+  - Pay for what you use:
+    - Linux - billing per second, after the first minute
+    - all other operating systems (ex. Windows) - billing per hour
+  - Has the highest cost but no upfront payment
+  - No long-term commitment
+  - Recommended for `short-term` and  `un-interrupted workloads`, where you can't predict how the application will behave.
+
+## EC2 Reserved Instances
+  - Up to 75% discount compared to On-deman
+  - Reservation period: 1 year = + discount | 3 years = +++ discount
+  - Purchasing options: no upfront | partial upfront = + discount | All upfront = ++ discount
+  - Reserve a specific instance type
+  - Recommended for steady-state usage applications (think database)
+
+  ### Convertible Reserved Instance
+    - can change the EC2 instance type
+    - up to 54% discount
+  ### Scheduled Reserved Instances
+    - launch within time window you reserve
+    - when you require a fraction of day/week/month
+    - still commitment over 1 to 3 years
