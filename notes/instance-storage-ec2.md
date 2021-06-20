@@ -72,19 +72,19 @@
 ## EC2 Instance Store
   - EBS volumes are __network drives__ with good but "limited" performance
   - __if you need a high-performance hardware disk, use EC2 Instance Store__
-  
+
   <br>
 
   - Better I/O performance
   - EC2 Instance Store lose their storage if they're stopped (ephemeral)
-  - Not good for as a durable long-term place to store data
+  - Not good for durable long-term place to store data
   - Good buffer/cache/scratch data/temporary content
   - Risk of data loss if hardware fails
   - Backups and Replication are __your responsibility__
 
 ## EFS - Elastic File System
   -  Managed NFS (network file system) that __can be mounted on 100s of EC2__
-  - EFS works with __Limux EC2__ instances in __multi-AZ__
+  - EFS works with __Linux EC2__ instances in __multi-AZ__
   - Highly available, scalable, expensive (3x gp2), pay per use, no capacity planning
 
 ## EBS vs EFS
@@ -145,3 +145,5 @@
     - Lost if our instance is stopped/terminated
   - EFS: network file system, can be attached to 100s of instances in a region
   - EFS-IA: cost-optomized storage class for infrequent accessed files
+  - FSx for Windows: Network File System for Windows servers
+  - FSx for Lustre: High Performance Computing Linux file system
