@@ -178,4 +178,134 @@
   - For archive objects, you don't need in real-time, GLACIER or DEEP_ARCHIVE
   - Moving objects can be automated using a `lifecycle configuration`
 
-##
+## S3 Object Lock & Glacier Vault Lock
+  - S3 Object Lock
+    - Adopt a WORM (Write Once Read Many) model
+    - Block an object versiond eletion for a specified amount of time
+  - Glacier Vault Lock
+    - Adrop a WORM (Write Once Read Many) model
+    - Lock the policy for future edits (can no longer be changed)
+    - Helpful for compliance and data retention
+
+## Shared Responsibility Model
+  - AWS
+    - Infrastructure (global security, durability, availability, sustain concurrent loss of data in 2 facilities)
+    - Configuration and vulnerability analysis
+    - Compliance validation
+  - Customer
+    - S3 versioning
+    - S3 Bucket policies
+    - S3 Replication Setup
+    - Logging and Monitoring
+    - S3 Storage Classes
+    - Data encryption at rest and in transit
+
+## AWS Snow Family
+  - Highly-secure, portable devices to `collect and process data at the edge` and `migrate data into and out of AWS`
+  - Data Migration: Snowcone, Snowball Edge, Snowmobile
+  - Edge Computing: Snowcone, Snowball Edge
+
+### Data Migration with AWS Snow Family
+  - Time to transfer data can take a long time over network
+  - Challenges:
+    - limited connectivity
+    - limited bandwith
+    - high network cost
+    - shared bandwith (can't maximize the line)
+    - connection stability
+
+AWS Snow Family: offline devices to perform data migrations - if it takes more than a week to transfer over the network, use Snowball devices
+
+### Diagrams
+![Snow Diagrams](https://github.com/granzb11/udemy-cloud-practitioner/blob/main/images/snow-diagrams.png)  
+
+### Snowball Edge (for data transfers)
+  - Physical data transport solution: move TBs or PBs of data in or out of AWS
+  - Alternative to moving data over the network (and paying network fees)
+  - Pay per data transfer job
+  - Provide block storage and Amazon S3-compatible object storage
+
+### Snowball Snowcone
+  - Small,portable computing, anywhere, rugged and secure, withstands hard environments
+  - light
+  - device used for edge computing, storage, and data transfer
+  - 8 TBs of usable storage
+  - Use Snowcone where snowball does not fit (space contrained environment)
+  - Must provie your own battery cables
+  - Can be sent back to AWS offline, or connect it to internet and use AWS DataSync to send data
+
+### AWS Snowmobile
+  - Transfer exabytes ofdata 
+  - Each snowmobile has 100 PB of capacity (use multiple in parallel)
+  - High security
+  - Better than Snowball if you transfer more than 10 PBs
+
+### Snow Family - Usage Process
+1. Request Snowball devices from the AWS console for delivery
+2. Install the snowball client/AWS OpsHub on your servers
+3. Connect the snowball to your servers and copy  file using the client
+4. Ship back the device when you're done (goes to the right AWS facility)
+5. Data will be loaded into an S3 bucket
+6. Snowball is completely wiped
+
+### What is Edge Computing
+  - Process data while it's being created on an `edge location`
+    - A truck on the road, ship on the sea, a mining station underground
+  - These locations may have
+    - Limited/no internet access
+    - Limited/no easy access to computing power
+  - We setup a Snowball Edge/Snowcone device to do edge computing
+  - Use cases of Edge Computing:
+    - Preprocess data
+    - Machine learning at the edge
+    - Transcoding media streams
+  - Eventually (if need be) we can ship back to AWS (fro transferring data for example)
+
+### Snow Family - Edge Computing
+  - Snowcone (smaller)
+  - Snowball Edge - Compute Optimized
+  - Snowball Edge - Storage Optimized
+  - All: Can run EC2 instances & AWS  Lambda functions (using AWS IoT Greengrass)
+  - Long-term deployment options: 1 and 3 years discounted pricing
+
+### AWS OpsHub
+  - Historically, to use the Snow Family devices, you needed a CLI
+  - AWS OpsHub - a software you can install on your computer to manage your Snow Family Device
+
+## Storage Gateway Overview
+
+### Hybrid Cloud for Storage
+  - AWS is pushing for ”hybrid cloud”
+    - Part of your infrastructure is on-premises 
+    - Part of your infrastructure is on the cloud
+  - This can be due to
+    - Long cloud migrations
+    - Security requirements
+    - Compliance requirements 
+    - IT strategy
+  - S3 is a proprietary storage technology (unlike EFS / NFS), so how do you expose the S3 data on-premise?
+  -  AWS Storage Gateway!
+
+### AWS Storage Gateway
+  - Bridge between on-premise data and cloud data in S3
+  - Hybrid storage service to allow on- premises to seamlessly use the AWS Cloud
+  - Use cases: disaster recovery, backup & restore, tiered storage
+  - Types of Storage Gateway: 
+    - File Gateway
+    - Volume Gateway 
+    - Tape Gateway
+  - No need to know the types at the exam
+
+Amazon S3 – Summary
+  - Buckets vs Objects: global unique name, tied to a region
+  - S3 security: IAM policy, S3 Bucket Policy (public access), S3 Encryption
+  - S3 Websites: host a static website on Amazon S3
+  - S3 Versioning: multiple versions for files, prevent accidental deletes
+  - S3 Access Logs: log requests made within your S3 bucket
+  - S3 Replication: same-region or cross-region, must enable versioning
+  - S3 Storage Classes: Standard, IA, 1Z-IA, Intelligent, Glacier, Glacier Deep Archive   
+  - S3 Lifecycle Rules: transition objects between classes
+  - S3 GlacierVault Lock / S3 Object Lock:WORM (Write Once Read Many)
+  - Snow Family: import data onto S3 through a physical device, edge computing
+  - OpsHub: desktop application to manage Snow Family devices
+  - Storage Gateway: hybrid solution to extend on-premises storage to S3  
